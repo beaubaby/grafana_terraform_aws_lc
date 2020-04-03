@@ -1,0 +1,23 @@
+#==========Provider Variables=====
+aws_region = "ap-southeast-2"
+aws_profile = "default"
+aws_vpc_id = "vpc-xxx"
+
+#==========Grafana Lunch Configuration Variables=====
+name = "grafana"
+image_id = "ami-033ebb57a222b5ee2"
+instance_type = "t3.medium"
+key_name = "xxx"
+
+#==========Grafana Auto Scaling Group Variables=====
+health_check_type = "ELB"
+vpc_zone_identifier = ["subnet-xxx","subnet-xxx"]
+desired_capacity = 1
+max_size = 1
+min_size = 1
+public_subnets = ["subnet-xxx","subnet-xxx"]
+
+#==========Grafana DNS Variables=====
+domain_zone_id = "xxx"
+root_domain_name = "xxx.net"
+grafana_domain_name = "grafana.xxx.net"
